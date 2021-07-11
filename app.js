@@ -19,7 +19,7 @@ app.get('/texttospeechdemo',(req,res) => {
 })
 
 app.get('/texttospeechdemo/:text',(req,res) => {
-  var text = "How are you aman"
+  var text = req.params.text;
 
   var language = "en"
 
